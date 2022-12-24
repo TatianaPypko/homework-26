@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework 26</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="categories">
+        <button name="cookie">Печиво</button>
+        <button name="ice-cream">Морозиво</button>
+        <button name="candy">Цукерки</button>
+        <button name="water">Вода</button>
+      </div>
+
+      <div class="goods"></div>
+      <div class="card"></div>
+      <div class="message"></div>
+    </div>
+
+    <form method="post">
+      <fieldset class="fieldset">
+        <legend class="legend-inform title">Введіть данні</legend>
+
+        <!-- Name -->
+        <div class="inform">
+          <label class="data" for="full-name">Введіть повне ім'я (ПІБ)</label>
+          <input
+            id="full-name"
+            type="text"
+            name="name"
+            placeholder="Введіть ім'я"
+          />
+        </div>
+
+        <!-- City -->
+        <div class="inform">
+          <label class="information" for="your-city">Введіть місто</label>
+          <select id="your-city" name="city" size="1">
+            <option value="Odesa">Одеса</option>
+            <option value="Kyiv">Київ</option>
+            <option value="Lviv">Львів</option>
+            <option value="Mykolaiv">Миколаїв</option>
+          </select>
+        </div>
+
+        <!-- Address -->
+        <div class="title inform">
+          <label class="information" for="address"
+            >Введіть склад Нової пошти</label
+          >
+          <textarea
+            id="address"
+            rows="3"
+            name="requests"
+          ></textarea>
+        </div>
+
+        <!-- Pay -->
+        <label for="payment">Способ оплаты</label>
+        <select name="payment" id="payment">
+          <option value="Післяплата">Післяплата</option>
+          <option value="Банківська карта">Банківська карта</option>
+        </select>
+
+
+        <!-- amount -->
+        <div class="inform">
+          <label class="data" for="number">Кількість товару</label>
+          <input type="number" id="number" name="number" min="1" value="1" />
+        </div>
+        <!-- Comments -->
+        <div class="inform">
+          <label class="data" for="request">Коментар</label>
+          <textarea
+            id="request"
+            rows="10"
+            maxlength="200"
+            name="requests"
+            placeholder="200 characters maximum"
+          >
+</textarea>
+        </div>
+
+        <button class="button btn" type="submit">Зберегти</button>
+      </fieldset>
+    </form>
+
+    <table class="table">
+      <th>Ваші особисті данні</th>
+      <tr>
+        <td class="table__name">Повне ім'я</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="table__city">Місто</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="table__address">Склад Нової пошти</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="table__payment">Вид оплати</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="table__goods">Кількість товару</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="table__comment">Коментар</td>
+        <td></td>
+      </tr>
+    </table>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
